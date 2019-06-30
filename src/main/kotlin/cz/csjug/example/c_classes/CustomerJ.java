@@ -2,7 +2,7 @@ package cz.csjug.example.c_classes;
 
 import kotlin.jvm.internal.Intrinsics;
 
-public class CustomerJ {
+final public class CustomerJ {
     final private String cluid;
     private String name;
     final private Integer yearOfBirth;
