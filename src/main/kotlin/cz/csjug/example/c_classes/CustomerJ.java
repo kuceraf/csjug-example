@@ -54,22 +54,23 @@ final public class CustomerJ {
         return var1 + (yearOfBirth1 != null ? yearOfBirth1.hashCode() : 0);
     }
 
-    public boolean equals(Object var1) {
-        if (this != var1) {
-            if (var1 instanceof CustomerK) {
-                CustomerK var2 = (CustomerK)var1;
-            if (Intrinsics.areEqual(this.cluid, var2.getCluid()) &&
-                        Intrinsics.areEqual(this.name, var2.getName()) &&
-                        Intrinsics.areEqual(this.yearOfBirth, var2.getYearOfBirth())) {
-                    return true;
-                }
-            }
-
-            return false;
-        } else {
-            return true;
-        }
-    }
+    // TODO
+//    public boolean equals(Object var1) {
+//        if (this != var1) {
+//            if (var1 instanceof CustomerK) {
+//                CustomerK var2 = (CustomerK)var1;
+//            if (Intrinsics.areEqual(this.cluid, var2.getCluid()) &&
+//                        Intrinsics.areEqual(this.name, var2.getName()) &&
+//                        Intrinsics.areEqual(this.yearOfBirth, var2.getYearOfBirth())) {
+//                    return true;
+//                }
+//            }
+//
+//            return false;
+//        } else {
+//            return true;
+//        }
+//    }
 
 
     public static void main(String[] args) {

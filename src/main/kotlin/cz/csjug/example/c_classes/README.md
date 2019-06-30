@@ -1,10 +1,11 @@
 # Customer class
 ###Atributy:
-- cluid 
-    - not null 
 - name 
-    - not null
-    - can change
+   - not null
 - yearOfBirth
    - mandatory
    - nullable
+- age
+- socialSecurityNumber
+    - optional
+    - must start with 'SN'
