@@ -1,6 +1,5 @@
 package cz.csjug.example.c_classes;
 
-import kotlin.jvm.internal.Intrinsics;
 
 final public class CustomerJ {
     final private String cluid;
