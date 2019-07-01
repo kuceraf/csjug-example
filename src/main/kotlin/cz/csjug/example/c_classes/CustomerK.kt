@@ -1,5 +1,6 @@
 package cz.csjug.example.c_classes
 
+import java.lang.IllegalArgumentException
 import java.util.*
 
 /**
@@ -39,7 +40,7 @@ data class CustomerK(val name: String, // primary constructor with declaration a
 
     private fun validateSN(value: String?): String {
         if(value == null || !value.startsWith("SN")) {
-            throw IllegalAccessException("Social Security Number should start with SN")
+            throw IllegalArgumentException("Social Security Number should start with SN")
         }
         return value
     }

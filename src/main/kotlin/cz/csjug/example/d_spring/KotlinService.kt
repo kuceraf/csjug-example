@@ -7,10 +7,10 @@ import javax.annotation.PostConstruct
 @Service
 class KotlinService {
     @Autowired
-    lateinit var javaService: JavaService
+    lateinit var javaService: JavaService // Normally, properties declared as having a non-null type must be initialized in the constructor
 
     @PostConstruct
     fun setUp() {
-        javaService.printMessage("Good bye");
+        javaService.printMessage("Message for Java service");
     }
 }
