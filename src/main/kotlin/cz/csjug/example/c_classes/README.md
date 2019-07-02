@@ -3,9 +3,9 @@
 - name 
    - not null
 - yearOfBirth
-   - mandatory
-   - nullable
+   - not null
 - age
+   - computed value
 - socialSecurityNumber
     - optional
     - must start with 'SN'
