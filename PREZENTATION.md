@@ -3,7 +3,7 @@
 ### Úvod
 Open Source (http://github.com/jetbrains/kotlin)
 
-**Nečastější použití:**
+**Nejčastější použití:**
 - Mobilní aplikace (Android)
 - Server side code
 

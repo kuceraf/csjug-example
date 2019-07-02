@@ -8,11 +8,7 @@ fun printDetail(name: String,
     println("name: $name, email: $email, phone: $phone")
 }
 
-// Higher-Order functions
-
 fun main(args: Array<String>) {
     // named parameters
     printDetail(email = "filip@mail.com", name = "Filip")
-
-    //
 }
