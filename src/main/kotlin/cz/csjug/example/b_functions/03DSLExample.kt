@@ -4,6 +4,7 @@ import java.sql.SQLException
 
 fun transaction(db: Database, code: () -> Unit) {
     try {
+        db.connect()
         code() // execute the code
         db.commit()
     } catch (e: SQLException) {
@@ -12,11 +13,14 @@ fun transaction(db: Database, code: () -> Unit) {
 }
 
 class Database{
+    fun connect() {
+        println("Connecting to DB")
+    }
     fun rollback() {
         println("Rolling back changes in DB")
     }
     fun commit() {
-        println("Committing data into DB")
+        println("Committing changes into DB")
     }
 }
 
